@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+}
+.box1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    text-align: center;
+    line-height: 200px;
+    background: black;
+    color: white;
+    animation: boxBox 4s ease-in-out infinite;
+}
+
+@keyframes boxBox {
+   0% {
+    transform: translateX(30px);
+   }
+   30% {
+    transform: translateY(30px);
+   }
+   60% {
+    transform: translateX(30px);
+   }
+   100% {
+    transform: translateY(300px);
+   }
+}
+
+
